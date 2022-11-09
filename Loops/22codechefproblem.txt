@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+int main() {
+ int i;
+ 
+ int n;
+ cout<<"enter the table";
+ cin>>n;
+ for( i=1;i<=10;i++){
+     cout<<n<<"*"<<i<<"="<<n*i<<endl;
+ }
+ return 0;
+}
+////////////////////////////////
+#include <iostream>
+using namespace std;
+long long int fact(int m){
+       long long  int facto=1;
+    for(int i=1;i<=m;i++){
+        
+   facto =facto*i;
+        
+    }
+    return facto;
+}
+int main() {
+    // Write C++ code here
+   int n;
+   
+   cout<<"enter a numner you want to calculate factorial of";
+   cin>>n;
+   long long int result;
+   result=fact(n);
+   cout<<result;
+   return 0;
+   
+}
